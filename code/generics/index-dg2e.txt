@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                          Chapter 9 - Generic Constants
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Figure/Section
+-----------                                     ------------                            --------------                  --------------
+control_unit.vhd                                entity control_unit                     test                            Figure 12-1
+D_flipflop.vhd                                  entity D_flipflop                       basic                           Figure 12-2
+reg.vhd                                         entity reg                              behavioral                      Figure 12-3
+inline_01.vhd                                   entity inline_01                        test                            Section 12.1
+inline_03.vhd                                   entity inline_03                        test                            Section 12.1
+inline_04d.vhd                                  entity inline_04d                       test                            Section 12.1
+inline_06.vhd                                   entity inline_06                        test                            Section 12.2
+inline_07.vhd                                   entity inline_07                        test                            Section 12.2
+inline_08.vhd                                   entity inline_08                        test                            Section 12.2
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                                    TestBenches
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Tested Model
+------------                                    ------------                            --------------                  ------------

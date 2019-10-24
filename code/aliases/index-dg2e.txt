@@ -1,0 +1,25 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                               Chapter 9 - Aliases
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Figure/Section
+-----------                                     ------------                            --------------                  --------------
+controller_system.vhd                           package alu_types                       --                              --
+--                                              package io_types                        --                              --
+--                                              entity controller_system                structural                      Figure 9-1
+function_plus.vhd                               package function_plus                   body                            Figure 9-2
+DMA_controller_types_and_utilities.vhd          package cpu_types                       --                              --
+--                                              package bit_vector_unsigned_arithmetic  body                            --
+--                                              package DMA_controller_types_and_utilities  --                          Figure 9-3
+DMA_controller.vhd                              entity DMA_controller                   behavioral                      Figure 9-4
+inline_02.vhd                                   entity inline_02                        test                            Section 9.1
+inline_04.vhd                                   entity inline_04                        test                            Section 9.2
+inline_05.vhd                                   package system_types                    --                              Section 9.2
+--                                              entity inline_05                        test                            Section 9.2
+inline_06.vhd                                   package arithmetic_ops                  body                            Section 9.2
+--                                              entity inline_06                        test                            Section 9.2
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                                    TestBenches
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Tested Model
+------------                                    ------------                            --------------                  ------------
+tb_function_plus.vhd                            entity tb_function_plus                 test                            tb_function_plus.vhd

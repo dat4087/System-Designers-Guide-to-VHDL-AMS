@@ -1,0 +1,40 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                             Chapter 7 - Subprograms
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Figure/Section
+-----------                                     ------------                            --------------                  --------------
+average_samples.vhd                             entity average_samples                  test                            Figure 9-1
+control_processor.vhd                           entity control_processor                rtl                             Figure 9-2
+instruction_interpreter.vhd                     entity instruction_interpreter          test                            Figure 9-3
+control_sequencer.vhd                           entity control_sequencer                test                            Figure 9-4
+instruction_interpreter-1.vhd                   entity instruction_interpreter          test                            Figure 9-5
+do_arith_op.vhd                                 entity do_arith_op                      test                            Figure 9-6
+addu.vhd                                        entity addu                             test                            Figure 9-7
+negate.vhd                                      entity negate                           test                            Figure 9-8
+receiver.vhd                                    entity receiver                         behavioral                      Figure 9-9
+signal_generator.vhd                            entity signal_generator                 top_level                       Figure 9-10
+increment.vhd                                   entity increment                        test                            Figure 9-11
+find_first_set.vhd                              entity find_first_set                   test                            Figure 9-12
+bv_lt.vhd                                       entity bv_lt                            test                            Figure 9-13
+check_setup.vhd                                 entity check_setup                      test                            Figure 9-14
+generate_clock.vhd                              entity generate_clock                   test                            Figure 9-15
+limit.vhd                                       entity limit                            test                            Figure 9-16
+bv_to_natural.vhd                               entity bv_to_natural                    test                            Figure 9-17
+network_driver.vhd                              entity network_driver                   test                            Figure 9-18
+hold_time_checker.vhd                           entity hold_time_checker                test                            Figure 9-19
+reg_ctrl.vhd                                    entity reg_ctrl                         bool_eqn                        Figure 9-20
+ent.vhd                                         --                                      arch                            Figure 9-21
+cache.vhd                                       entity cache                            behavioral                      Figure 9-22
+p1.vhd                                          --                                      --                              Figure 9-23
+inline_01.vhd                                   entity inline_01                        test                            Section 9.2
+inline_02.vhd                                   entity inline_02                        test                            Section 9.3
+inline_03.vhd                                   entity inline_03                        test                            Section 9.4
+inline_06d.vhd                                  entity inline_06d                       --                              Section 9.4
+inline_07.vhd                                   entity inline_07                        test                            Section 9.5
+inline_08.vhd                                   entity inline_08                        test                            Section 9.5
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                                    TestBenches
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Tested Model
+------------                                    ------------                            --------------                  ------------
+tb_reg_ctrl.vhd                                 entity tb_reg_ctrl                      test                            reg_ctrl.vhd

@@ -1,0 +1,32 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                        Chapter 21 - Miscellaneous Topics
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Figure/Section
+-----------                                     ------------                            --------------                  --------------
+count2.vhd                                      entity D_flipflop                       behavioral                      --
+--                                              entity inverter                         behavioral                      --
+--                                              entity count2                           buffered_outputs                Figure 21-1
+limit_checker.vhd                               package project_util                    body                            Section 21.2
+--                                              entity limit_checker                    behavioral                      Figure 21-2
+test_bench.vhd                                  entity random_source                    fudged                          Section 21.2
+--                                              entity test_bench                       random_test                     Figure 21-3
+processor.vhd                                   entity processor                        rtl                             Figure 21-4
+SR_flipflop.vhd                                 entity SR_flipflop                      dataflow                        Figure 21-5
+two_port_reg.vhd                                entity two_port_reg                     behavioral                      Figure 21-6
+cache_instrumentation.vhd                       package cache_types                     --                              --
+--                                              package cache_instrumentation           body                            Figure 21-8
+cache.vhd                                       entity cache                            behavioral                      Figure 21-9
+multiprocessor.vhd                              entity processor                        behavioral                      --
+--                                              entoty multiprocessor                   system                          Figure 21-10
+inline_01.vhd                                   entity inline_01                        test                            Section 21.2
+inline_02.vhd                                   entity inline_02                        test                            Section 21.3
+inline_03d.vhd                                  entity inline_03d                       test                            Section 21.4
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                                    TestBenches
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Tested Model
+------------                                    ------------                            --------------                  ------------
+tb_count2.vhd                                   entity tb_count2                        test                            count2.vhd
+tb_limit_checker.vhd                            entity tb_limit_checker                 test                            limit_checker.vhd
+tb_SR_flipflop.vhd                              entity tb_SR_flipflop                   test                            SR_flipflop.vhd
+tb_two_port_reg.vhd                             tb_two_port_reg                         test                            two_port_reg.vhd

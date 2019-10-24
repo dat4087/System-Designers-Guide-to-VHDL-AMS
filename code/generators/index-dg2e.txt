@@ -1,0 +1,39 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                         Chapter 14 - Generate Statements
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Figure/Section
+-----------                                     ------------                            --------------                  --------------
+register_tristate.vhd                           entity D_flipflop                       synthesized                     --
+--                                              entity tristate_buffer                  synthesized                     --
+--                                              entity register_tristate                cell_level                      Figure 14-1
+graphics_engine.vhd                             entity graphics_engine                  behavioral                      Figure 14-2
+memory_board.vhd                                entity DRAM                             empty                           --
+--                                              entity memory_board                     chip_level                      Figure 14-3
+shift_reg.vhd                                   entity master_slave_flipflop            behavioral                      --
+--                                              entity shift_reg                        cell_level                      Figure 14-5
+computer_system.vhd                             entity computer_system                  block_level                     Section 14.2, Figure 14-6
+fanout_tree.vhd                                 entity buf                              basic                           --
+--                                              entity fanout_tree                      recursive                       Figure 14-8
+computer_system-1.vhd                           package bus_monitor_pkg                 --                              --
+--                                              entity bus_monitor                      general_purpose                 --
+--                                              entity computer_system                  block_level                     Figure 14-9
+architectural.vhd                               configuration architectural             --                              Figure 14-10
+identical_cells.vhd                             configuration identical_cells           --                              Figure 14-11
+down_to_chips.vhd                               entity DRAM_4M_by_4                     chip_function                   --
+--                                              configuration down_to_chips             --                              Figure 14-12
+last_high_drive.vhd                             entity ms_flipflop                      normal_drive, high_drive        --
+--                                              configuration last_high_drive           --                              Figure 14-13
+inline_01.vhd                                   entity inline_01                        test                            --
+--                                              configuration inline_01_test            --                              Section 14.2
+inline_02.vhd                                   entity inline_02                        test                            Section 14.2
+inline_03d.vhd                                  entity buf                              basic                           --
+--                                              entity fanout_tree                      recursive                       Section 14.2
+--                                              entity inline_03d                       test                            --
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                                    TestBenches
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Tested Model
+------------                                    ------------                            --------------                  ------------
+tb_identical_cells.vhd                          entity tb_identical_cells               test                            identical_cells.vhd
+tb_shift_reg.vhd                                entity tb_shift_reg                     test                            shift_reg.vhd
+tb_last_high_drive.vhd                          entity tb_last_high_drive               test                            last_high_drive.vhd

@@ -1,0 +1,52 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                    Chapter 13 - Components and Configurations
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Figure/Section
+-----------                                     ------------                            --------------                  --------------
+reg4.vhd                                        entity edge_triggered_Dff               basic, hi_fanout                --
+--                                              entity reg4                             struct                          Figure 13-1
+serial_interface_defs.vhd                       package serial_interface_defs           --                              Figure 13-2
+serial_interface.vhd                            entity serial_interface                 test                            Figure 13-3
+microcontroller.vhd                             entity microcontroller                  structure                       Figure 13-4
+reg4_gate_level.vhd                             configuration reg4_gate_level           --                              Figure 13-5
+counter.vhd                                     package counter_types                   --                              Section 13.2
+--                                              entity add_1                            boolean_eqn                     --
+--                                              entity buf4                             basic                           --
+--                                              entity counter                          registered                      Figure 13-6
+counter_down_to_gate_level.vhd                  configuration counter_down_to_gate_level  --                            Figure 13-7
+counter_full.vhd                                configuration full                      --                              Figure 13-8
+alarm_clock.vhd                                 entity alarm_clock                      top_level                       Figure 13-9
+reg.vhd                                         entity reg                              gate_level                      Figure 13-10
+controller.vhd                                  entity controller                       structural                      Figure 13-11
+controller_with_timing.vhd                      configuration controller_with_timing    --                              Figure 13-12
+computer_system.vhd                             entity computer_system                  structure                       Figure 13-13
+decoder_3_to_8.vhd                              entity decoder_3_to_8                   basic                           Figure 13-14
+computer_structure.vhd                          configuration computer_structure        --                              Figure 13-15
+single_board_computer.vhd                       entity single_board_computer            structural                      Figure 13-17
+intermediate.vhd                                entity XYZ3000_cpu                      full_function                   --
+--                                              entity memory_array                     behavioral                      --
+--                                              configuration intermediate              --                              Figure 13-18
+logic_block.vhd                                 entity nand3                            behavioral                      --
+--                                              entity logic_block                      ideal                           Figure 13-19
+reg-1.vhd                                       entity reg                              gate_level                      Figure 13-21
+control_section.vhd                             entity control_section                  structural                      Figure 13-20
+controller_with_timing-1.vhd                    configuration controller_with_timing    --                              Figure 13-22
+interlock_control.vhd                           entity not_gate                         primitive                       --
+--                                              entity interlock_control                detailed_timing                 Figure 13-23
+interlock_control_with_estimates.vhd            configuration interlock_control_with_estimates  --                      Figure 13-24
+--                                              configuration interlock_control_with_actual  --                         Figure 13-24
+misc_logic.vhd                                  entity misc_logic                       gate_level                      Figure 13-25
+misc_logic_reconfigured.vhd                     configuration misc_logic_reconfigured   --                              Figure 13-26
+inline_01d.vhd                                  configuration inline_01d                --                              Section 13.2
+inline_03d.vhd                                  entity inline_03d                       test                            --
+--                                              configuration inline_03d_test           --                              Section 13.2
+inline_05.vhd                                   entity inline_05                        test                            Section 13.2
+--                                              entity nand2                            --                              Section 13.2
+--                                              configuration inline_05_test            --                              Section 13.2
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                                    TestBenches
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Tested Model
+------------                                    ------------                            --------------                  ------------
+tb_counter_down_to_gate_level.vhd               entity tb_counter_down_to_gate_level    test                            counter_down_to_gate_level.vhd
+tb_counter_full.vhd                             entity tb_counter_full                  test                            counter_full.vhd

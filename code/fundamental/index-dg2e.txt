@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                        Chapter 1  - Fundamental Concepts
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Primary Unit                            Secondary Unit                  Figure/Section
+-----------                                     ------------                            --------------                  --------------
+reg4.vhd                                        entity reg4                             behav, struct                   Figures 1-7, 1-8, 1-11
+d_latch.vhd                                     entity d_latch                          basic                           Figure 1-10
+and2.vhd                                        entity and2                             basic                           Figure 1-10
+multiplier.vhd                                  entity multiplier                       mixed                           Figure 1-12
+test_bench.vhd                                  entity test_bench                       test_reg4                       Figure 1-13
+---------------------------------------------------------------------------------------------------------------------------------------------
+--                                                                    TestBenches
+---------------------------------------------------------------------------------------------------------------------------------------------
+-- Filename                                     Entity                                  Architecture                    Tested Model
+------------                                    -------                                 ------------                    ------------
+tb_reg4_behav.vhd                               entity tb_reg4_behav                    tb_reg4_behav                   reg4.vhd
+tb_reg4_struct.vhd                              entity tb_reg4_struct                   tb_reg4_struct                  reg4.vhd
+tb_multiplier.vhd                               entity shift_adder                      behavior                        multiplier.vhd
+--                                              entity reg                              behavior
+--                                              entity shift_reg                        behavior
