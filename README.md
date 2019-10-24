@@ -2,7 +2,7 @@
 VHDL-AMS source code examples from The System Designer's Guide to VHDL-AMS
 
 This repository contains the source code examples found in the book:
-The System Designer's Guide to VHDL-AMS
+The System Designer's Guide to VHDL-AMS. 
 You can buy this book from Elsevier here:
 https://www.elsevier.com/books/the-system-designers-guide-to-vhdl-ams/ashenden/978-1-55860-749-1
 
